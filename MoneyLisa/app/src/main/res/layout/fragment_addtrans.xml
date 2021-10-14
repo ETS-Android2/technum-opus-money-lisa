@@ -1,0 +1,383 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundColor"
+    android:tag="addtrans_fragment_tag"
+    tools:context=".controller.addtrans.AddTransactionFragment">
+
+
+    <!--    <Button-->
+    <!--        android:id="@+id/btCancelAddtransToHome"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:text="Cancel"-->
+    <!--        app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintHorizontal_bias="0.123"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toTopOf="parent"-->
+    <!--        app:layout_constraintVertical_bias="0.499" />-->
+
+    <!--    <Button-->
+    <!--        android:id="@+id/btAddtransToRecpop"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:text="Set Recursive"-->
+    <!--        app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintHorizontal_bias="0.517"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toTopOf="parent"-->
+    <!--        app:layout_constraintVertical_bias="0.499" />-->
+
+    <!--    <Button-->
+    <!--        android:id="@+id/addtrans_btOk"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_marginBottom="340dp"-->
+    <!--        android:text="Ok"-->
+    <!--        app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintHorizontal_bias="0.36"-->
+    <!--        app:layout_constraintStart_toEndOf="@+id/btAddtransToRecpop" />-->
+
+    <EditText
+        android:id="@+id/addtrans_et_borrowed"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="177dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="17dp"
+        android:ems="10"
+        android:focusable="false"
+        android:hint="Borrowed from"
+        android:inputType="textImeMultiLine"
+        android:paddingStart="10dp"
+        android:text=""
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addtrans_sp_cat"
+        app:layout_constraintVertical_bias="0" />
+
+    <EditText
+        android:id="@+id/addtrans_et_recnotes"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="17dp"
+        android:ems="10"
+        android:hint="Repeat Details"
+        android:inputType="textImeMultiLine"
+        android:paddingStart="10dp"
+        android:text=""
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addtrans_sp_recfreq"
+        app:layout_constraintVertical_bias="0" />
+
+    <Spinner
+        android:id="@+id/addtrans_sp_recfreq"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/edit_text_border_style"
+        android:entries="@array/RecursiveTransactions"
+        android:hint="Labels"
+        android:paddingStart="10dp"
+        android:spinnerMode="dialog"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/addtrans_et_recdate"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addtrans_sp_mop"
+        app:layout_constraintVertical_bias="0" />
+
+    <EditText
+        android:id="@+id/addtrans_et_date"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="227dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="17dp"
+        android:ems="10"
+        android:focusable="false"
+        android:hint="Date"
+        android:inputType="textImeMultiLine"
+        android:paddingStart="10dp"
+        android:text=""
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addtrans_et_amount"
+        app:layout_constraintVertical_bias="0" />
+
+    <Spinner
+        android:id="@+id/addtrans_sp_mop"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/edit_text_border_style"
+        android:entries="@array/ModeOfPayments"
+        android:hint="Labels"
+        android:paddingStart="10dp"
+        android:spinnerMode="dialog"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/addtrans_et_date"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addtrans_sp_cat"
+        app:layout_constraintVertical_bias="0" />
+
+    <EditText
+        android:id="@+id/addtrans_et_details"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="17dp"
+        android:ems="10"
+        android:hint="Details"
+        android:inputType="textImeMultiLine"
+        android:paddingStart="10dp"
+        android:text=""
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addtrans_et_title"
+        app:layout_constraintVertical_bias="0" />
+
+
+    <Button
+        android:id="@+id/addtrans_bt_editcats"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="40dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="177dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="17dp"
+        android:background="@drawable/edit_text_border_style"
+        android:drawableLeft="@drawable/ic_menu_editcats"
+        android:paddingStart="10dp"
+        android:textAlignment="viewStart"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addtrans_et_amount"
+        app:layout_constraintVertical_bias="0" />
+
+    <EditText
+        android:id="@+id/addtrans_et_title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="17dp"
+        android:ems="10"
+        android:hint="Title"
+        android:inputType="textShortMessage"
+        android:paddingStart="10dp"
+        android:text=""
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0" />
+
+    <Spinner
+        android:id="@+id/addtrans_sp_cat"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/edit_text_border_style"
+        android:entries="@array/Categories"
+        android:hint="Labels"
+        android:paddingStart="10dp"
+        android:spinnerMode="dialog"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/addtrans_bt_editcats"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addtrans_et_amount"
+        app:layout_constraintVertical_bias="0" />
+
+    <!--    <android.support.design.widget.BottomNavigationView-->
+    <!--        android:id="@+id/navigationView"-->
+    <!--        android:layout_width="0dp"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:background="?android:attr/windowBackground"-->
+    <!--        app:itemBackground="@color/colorPrimary"-->
+    <!--        app:itemIconTint="@color/colorPrimary"-->
+    <!--        app:itemTextColor="@color/colorPrimary"-->
+    <!--        app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--        app:layout_constraintHorizontal_bias="0.0"-->
+    <!--        app:layout_constraintLeft_toLeftOf="parent"-->
+    <!--        app:layout_constraintRight_toRightOf="parent"-->
+    <!--        app:layout_constraintTop_toTopOf="parent"-->
+    <!--        app:layout_constraintVertical_bias="0.977"-->
+    <!--        app:menu="@menu/addtrans_bottom_menu" />-->
+
+    <EditText
+        android:id="@+id/addtrans_et_amount"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/edit_text_border_style"
+        android:ems="10"
+        android:hint="Amount"
+        android:inputType="numberDecimal"
+        android:paddingStart="10dp"
+        android:text=""
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/addtrans_sp_currency"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addtrans_et_details"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Spinner
+        android:id="@+id/addtrans_sp_currency"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="227dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="17dp"
+        android:background="@drawable/edit_text_border_style"
+        android:entries="@array/Currencies"
+        android:hint="Labels"
+        android:paddingStart="10dp"
+        android:paddingBottom="12dp"
+        android:spinnerMode="dialog"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addtrans_et_details"
+        app:layout_constraintVertical_bias="0" />
+
+    <!--    <View-->
+    <!--        android:id="@+id/addtrans_vi"-->
+    <!--        android:layout_width="360dp"-->
+    <!--        android:layout_height="50dp"-->
+    <!--        android:layout_marginStart="25dp"-->
+    <!--        android:layout_marginTop="35dp"-->
+    <!--        android:layout_marginEnd="25dp"-->
+    <!--        android:background="@drawable/addtrans_rectangle"-->
+    <!--        app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintHorizontal_bias="1.0"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/addtrans_sp_mop"-->
+    <!--        app:layout_constraintVertical_bias="0.167" />-->
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/navigationView"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="bottom"
+        android:layout_marginTop="650dp"
+        android:background="@color/white"
+        app:itemIconTint="@color/opusColor"
+        app:itemTextColor="@color/opusColor"
+        app:labelVisibilityMode="labeled"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:menu="@menu/addtrans_bottom_menu" />
+
+    <EditText
+        android:id="@+id/addtrans_et_recdate"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="177dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="17dp"
+        android:ems="10"
+        android:focusable="false"
+        android:hint="Repeat From"
+        android:inputType="textImeMultiLine"
+        android:paddingStart="10dp"
+        android:text=""
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addtrans_sp_mop"
+        app:layout_constraintVertical_bias="0" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleX="0.5"
+        android:scaleY="0.5"
+        android:src="@drawable/image_drop_down_arrow"
+        app:layout_constraintBottom_toBottomOf="@+id/addtrans_sp_currency"
+        app:layout_constraintEnd_toEndOf="@+id/addtrans_sp_currency"
+        app:layout_constraintHorizontal_bias="0.95"
+        app:layout_constraintStart_toStartOf="@+id/addtrans_sp_currency"
+        app:layout_constraintTop_toTopOf="@+id/addtrans_sp_currency" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleX="0.5"
+        android:scaleY="0.5"
+        android:src="@drawable/image_drop_down_arrow"
+        app:layout_constraintBottom_toBottomOf="@+id/addtrans_sp_mop"
+        app:layout_constraintEnd_toEndOf="@+id/addtrans_sp_mop"
+        app:layout_constraintHorizontal_bias="0.95"
+        app:layout_constraintStart_toStartOf="@+id/addtrans_sp_mop"
+        app:layout_constraintTop_toTopOf="@+id/addtrans_sp_mop" />
+
+    <ImageView
+        android:id="@+id/imageView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleX="0.5"
+        android:scaleY="0.5"
+        android:src="@drawable/image_drop_down_arrow"
+        app:layout_constraintBottom_toBottomOf="@+id/addtrans_sp_cat"
+        app:layout_constraintEnd_toEndOf="@+id/addtrans_sp_cat"
+        app:layout_constraintHorizontal_bias="0.95"
+        app:layout_constraintStart_toStartOf="@+id/addtrans_sp_cat"
+        app:layout_constraintTop_toTopOf="@+id/addtrans_sp_cat" />
+
+    <ImageView
+        android:id="@+id/rec_drop_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleX="0.5"
+        android:scaleY="0.5"
+        android:src="@drawable/image_drop_down_arrow"
+        app:layout_constraintBottom_toBottomOf="@+id/addtrans_sp_recfreq"
+        app:layout_constraintEnd_toEndOf="@+id/addtrans_sp_recfreq"
+        app:layout_constraintHorizontal_bias="0.95"
+        app:layout_constraintStart_toStartOf="@+id/addtrans_sp_recfreq"
+        app:layout_constraintTop_toTopOf="@+id/addtrans_sp_recfreq" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

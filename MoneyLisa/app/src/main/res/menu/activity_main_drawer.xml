@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+<!--        <item-->
+<!--            android:id="@+id/nav_blank"-->
+<!--            android:icon="@drawable/ic_menu_camera"-->
+<!--            android:title="@string/menu_blank" />-->
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_menu_home"
+            android:title="@string/menu_home" />
+        <item
+            android:id="@+id/nav_addtrans"
+            android:icon="@drawable/ic_menu_addtrans"
+            android:title="@string/menu_addtrans" />
+        <item
+            android:id="@+id/nav_add_income"
+            android:icon="@drawable/ic_menu_editincome"
+            android:title="@string/menu_addincome"
+            />
+        <item
+            android:id="@+id/nav_alltrans"
+            android:icon="@drawable/ic_menu_alltrans"
+            android:title="@string/menu_alltrans" />
+
+        <item
+            android:id="@+id/nav_rec_exp"
+            android:icon="@drawable/ic_recur"
+            android:title="@string/menu_recursive" />
+
+        <item
+            android:id="@+id/nav_profiles"
+            android:icon="@drawable/ic_menu_profiles"
+            android:title="@string/menu_profiles" />
+
+        <item
+            android:id="@+id/nav_threshold"
+            android:icon="@drawable/ic_warning"
+            android:title="@string/menu_threshold" />
+        
+<!--        <item-->
+<!--            android:id="@+id/nav_filops"-->
+<!--            android:icon="@drawable/ic_menu_filops"-->
+<!--            android:title="@string/menu_filops" />-->
+        <item
+            android:id="@+id/nav_editcats"
+            android:icon="@drawable/ic_menu_editcats"
+            android:title="@string/menu_editcats" />
+
+        <item
+            android:id="@+id/nav_help"
+            android:icon="@android:drawable/ic_menu_help"
+            android:title="@string/menu_help" />
+
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/ic_menu_logout"
+            android:title="@string/menu_logout" />
+
+            <item
+                android:id="@+id/nav_settings"
+                android:icon="@drawable/ic_menu_settings"
+                android:title="@string/menu_settings" />
+
+
+
+
+<!--        <item-->
+<!--            android:id="@+id/nav_spendanalysis"-->
+<!--            android:icon="@drawable/ic_launcher_spendanalysis"-->
+<!--            android:title="Spend Analysis" />-->
+
+<!--        <item-->
+<!--            android:id="@+id/nav_about_us"-->
+<!--            android:icon="@drawable/ic_menu_aboutus"-->
+<!--            android:title="@string/menu_aboutus"-->
+<!--            />-->
+    </group>
+</menu>

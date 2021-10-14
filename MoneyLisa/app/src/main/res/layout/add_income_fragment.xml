@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/backgroundColor"
+    android:tag="add_income_fragment_tag"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".controller.addIncome.AddIncomeFragment">
+
+
+
+    <EditText
+        android:id="@+id/et_addinc_title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="25dp"
+        android:ems="10"
+        android:hint="Title"
+        android:inputType="textShortMessage"
+        android:paddingStart="10dp"
+        android:text=""
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0" />
+
+
+
+
+
+    <EditText
+        android:id="@+id/et_addinc_details"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="25dp"
+        android:ems="10"
+        android:hint="Details"
+        android:inputType="textImeMultiLine"
+        android:paddingStart="10dp"
+        android:text=""
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_addinc_title"
+        app:layout_constraintVertical_bias="0" />
+
+
+
+    <EditText
+        android:id="@+id/et_amount_addinc"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/edit_text_border_style"
+        android:ems="10"
+        android:hint="Amount"
+        android:inputType="numberDecimal"
+        android:paddingStart="10dp"
+        android:text=""
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/sp_currency_addinc"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_addinc_details"
+        app:layout_constraintVertical_bias="0.0" />
+
+
+
+    <Spinner
+        android:id="@+id/sp_currency_addinc"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="235dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="25dp"
+        android:background="@drawable/edit_text_border_style"
+        android:entries="@array/Currencies"
+        android:hint="Labels"
+        android:paddingStart="10dp"
+        android:paddingBottom="12dp"
+        android:spinnerMode="dialog"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_addinc_details"
+        app:layout_constraintVertical_bias="0" />
+
+
+    <EditText
+        android:id="@+id/et_date_addinc"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="185dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="332dp"
+        android:ems="10"
+        android:focusable="false"
+        android:hint="Date"
+        android:inputType="textImeMultiLine"
+        android:paddingStart="10dp"
+        android:text=""
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sp_currency_addinc"
+        app:layout_constraintVertical_bias="0.657" />
+
+
+    <Spinner
+        android:id="@+id/sp_recfreq_addinc"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="296dp"
+        android:background="@drawable/edit_text_border_style"
+        android:entries="@array/RecursiveTransactions"
+        android:hint="Labels"
+        android:paddingStart="10dp"
+        android:spinnerMode="dialog"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/et_recdate_addinc"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addtrans_sp_mop"
+        app:layout_constraintVertical_bias="0" />
+
+    <EditText
+        android:id="@+id/et_recdate_addinc"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="185dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="25dp"
+        android:ems="10"
+        android:focusable="false"
+        android:hint="Repeat From"
+        android:inputType="textImeMultiLine"
+        android:paddingStart="10dp"
+        android:text=""
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_date_addinc"
+        app:layout_constraintVertical_bias="0" />
+
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/navigationViewIncome"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="bottom"
+        android:layout_marginTop="650dp"
+        android:background="@color/white"
+        app:itemIconTint="@color/opusColor"
+        app:itemTextColor="@color/opusColor"
+        app:labelVisibilityMode="labeled"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:menu="@menu/addincome_bottom_menu" />
+
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleX="0.5"
+        android:scaleY="0.5"
+        android:src="@drawable/image_drop_down_arrow"
+        app:layout_constraintBottom_toBottomOf="@+id/sp_currency_addinc"
+        app:layout_constraintEnd_toEndOf="@+id/sp_currency_addinc"
+        app:layout_constraintHorizontal_bias="0.95"
+        app:layout_constraintStart_toStartOf="@+id/sp_currency_addinc"
+        app:layout_constraintTop_toTopOf="@+id/sp_currency_addinc" />
+
+
+
+    <ImageView
+        android:id="@+id/rec_drop_img_addinc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleX="0.5"
+        android:scaleY="0.5"
+        android:src="@drawable/image_drop_down_arrow"
+        app:layout_constraintBottom_toBottomOf="@+id/sp_recfreq_addinc"
+        app:layout_constraintEnd_toEndOf="@+id/sp_recfreq_addinc"
+        app:layout_constraintHorizontal_bias="0.95"
+        app:layout_constraintStart_toStartOf="@+id/sp_recfreq_addinc"
+        app:layout_constraintTop_toTopOf="@+id/sp_recfreq_addinc" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

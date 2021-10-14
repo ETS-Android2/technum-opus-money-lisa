@@ -1,0 +1,85 @@
+<resources>
+    <string name="app_name">MoneyLisa</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Money Lisa</string>
+    <string name="nav_header_subtitle">Track what you spend</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_blank">Welcome</string>
+    <string name="menu_home">Home</string>
+    <string name="menu_addtrans">Add Expense</string>
+    <string name="menu_edittrans">Edit Expense</string>
+    <string name="menu_alltrans">View Expenses</string>
+    <string name="menu_filops">Filter Expenses</string>
+    <string name="menu_editcats">New Category</string>
+    <string name="menu_recursive">Repetitive Expenses</string>
+    <string name="menu_logout">Logout</string>
+    <string name="menu_spendanalysis">Spend Analysis</string>
+    <string name="menu_addincome">Add Income</string>
+    <string name="menu_aboutus">About Us</string>
+    <string name="menu_profiles">Profiles</string>
+    <string name="menu_threshold">Expense Warning</string>
+    <string name="menu_settings">Settings</string>
+    <string name="menu_currency">Default Currency</string>
+
+    <string name="blank_second">Blank Second</string>
+
+    <string name="add_category">Add a category</string>
+    <string name="edit_category">Edit category</string>
+    <string name="delete_category">Delete category</string>
+    <string name="delete_cat_dialog_msg">All associated expenses will be deleted as well. Are you sure you want to delete the category?</string>
+    <string name="category_deleted">Category deleted</string>
+    <string name="category_added">Category added</string>
+    <string name="category_updated">Category updated</string>
+    <string name="category_name_string">Category name</string>
+
+    <string name="delete_string">Delete</string>
+    <string name="done_string">Done</string>
+    <string name="error_empty_field">Empty field</string>
+    <string name="error_zero_value">Zero value is invalid</string>
+    <string name="error_incorrect_input">Incorrect input</string>
+    <string name="open">open</string>
+    <string name="close">close</string>
+    <string name="save_string">Save</string>
+    <string name="menu_help">Help</string>
+
+    <string-array name="Categories">
+        <item>Grocery</item>
+        <item>Travel</item>
+        <item>Utility Bill</item>
+    </string-array>
+
+    <string-array name="ModeOfPayments">
+        <item>Cash</item>
+        <item>Debit Card</item>
+        <item>Credit Card</item>
+        <item>Net Banking</item>
+        <item>Other</item>
+    </string-array>
+
+    <string-array name="Currencies">
+        <item>EUR</item>
+        <item>USD</item>
+        <item>INR</item>
+        <item>CAD</item>
+    </string-array>
+
+    <string-array name="RecursiveTransactions">
+        <item>Repeat Daily</item>
+        <item>Repeat Weekly</item>
+        <item>Repeat Monthly</item>
+        <item>Repeat Yearly</item>
+    </string-array>
+
+    <string-array name="ModeOfPaymentsFilter">
+        <item>Mode of Payment</item>
+        <item>Cash</item>
+        <item>Debit Card</item>
+        <item>Credit Card</item>
+        <item>Net Banking</item>
+        <item>Other</item>
+    </string-array>
+
+</resources>

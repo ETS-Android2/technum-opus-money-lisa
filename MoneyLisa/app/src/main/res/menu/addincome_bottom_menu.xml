@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/addinc_mi_recpop"
+        android:icon="@drawable/ic_recur"
+        android:title="Repeat"/>
+    <item
+        android:id="@+id/addinc_mi_cancel"
+        android:icon="@drawable/ic_cancel"
+        android:title="Cancel"/>
+    <item
+        android:id="@+id/addinc_mi_save"
+        android:icon="@drawable/ic_save"
+        android:title="Save"/>
+</menu>

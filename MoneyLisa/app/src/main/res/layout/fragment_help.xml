@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/backgroundColor"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:background="@color/backgroundColor"
+            android:orientation="vertical">
+
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sign-up/Sign-in"
+                android:textSize="18dp"
+                android:textStyle="bold"/>
+
+            <Button
+                android:id="@+id/viewmore"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="280dp"
+                android:layout_marginBottom="25dp"
+                android:background="@null"
+                android:clickable="true"
+                android:drawableBottom="@drawable/ic_viewmore" />
+
+
+    </RelativeLayout>
+
+
+        <RelativeLayout
+
+            android:visibility="gone"
+            android:id="@+id/expandable"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:animateLayoutChanges="true"
+            android:orientation="vertical">
+
+
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:text="Sign-in with your already existing account. If you do not have an account sign-up with your email-id and choose your own username and password. If the username already exists in our system, you will be asked to choose a new username."
+                android:textSize="15sp" />
+
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Categories"
+                android:textSize="18dp"
+                android:textStyle="bold"/>
+
+            <Button
+                android:id="@+id/viewmore1"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="280dp"
+                android:background="@null"
+                android:drawableTop="@drawable/ic_viewmore"/>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:visibility="gone"
+            android:animateLayoutChanges="true"
+            android:id="@+id/expandable1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            >
+
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:text="You can choose from the available categories or add your own in the edit categories option"
+                android:textSize="15sp" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:orientation="vertical">
+
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Add/View Expenses"
+                android:textSize="18dp"
+                android:textStyle="bold"/>
+
+            <Button
+                android:id="@+id/viewmore2"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="280dp"
+                android:background="@null"
+                android:drawableTop="@drawable/ic_viewmore" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:visibility="gone"
+            android:animateLayoutChanges="true"
+            android:id="@+id/expandable2"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            >
+
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:text="You can add/view an expense with the Add Expense/View Expense option in the navigation drawer. You can also add/view expense from the on screen options."
+                android:textSize="15sp" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:orientation="vertical">
+
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="User-Profiles"
+                android:textSize="18dp"
+                android:textStyle="bold"/>
+
+            <Button
+                android:id="@+id/viewmore3"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="280dp"
+                android:layout_marginBottom="25dp"
+                android:background="@null"
+                android:clickable="true"
+                android:drawableBottom="@drawable/ic_viewmore" />
+
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+
+            android:visibility="gone"
+            android:id="@+id/expandable3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:animateLayoutChanges="true"
+            android:orientation="vertical">
+
+
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:text="You can use Money Lisa to add multilple user profiles as per the need for eg: business, home or travel. All the information from the profiles will be available"
+                android:textSize="15sp" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:background="@color/backgroundColor"
+            android:orientation="vertical">
+
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Changing default currency"
+                android:textSize="18dp"
+                android:textStyle="bold"/>
+
+            <Button
+                android:id="@+id/viewmore4"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="280dp"
+                android:layout_marginBottom="25dp"
+                android:background="@null"
+                android:clickable="true"
+                android:drawableBottom="@drawable/ic_viewmore" />
+
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+
+            android:visibility="gone"
+            android:id="@+id/expandable4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:animateLayoutChanges="true"
+            android:orientation="vertical">
+
+
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:text="After signing-in, you will be asked to choose a default currency. If you want to change your default currency, it is available to be changed from the navigation menu"
+                android:textSize="15sp" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:background="@color/backgroundColor"
+            android:orientation="vertical">
+
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Adding income/Setting threshold"
+                android:textSize="18dp"
+                 android:textStyle="bold"/>
+
+            <Button
+                android:id="@+id/viewmore5"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="280dp"
+                android:layout_marginBottom="25dp"
+                android:background="@null"
+                android:clickable="true"
+                android:drawableBottom="@drawable/ic_viewmore" />
+
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+
+            android:visibility="gone"
+            android:id="@+id/expandable5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:animateLayoutChanges="true"
+            android:orientation="vertical">
+
+
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:text="You can add your income and can set an amount for threshold to limit or better track your expenses. Both these options are available in the navigation menu of the app."
+                android:textSize="15sp"
+                android:textFontWeight="@integer/config_navAnimTime"
+                />
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+</ScrollView>
