@@ -3,10 +3,10 @@
 ISEE Course Project Repository of Team Technum Opus
 
 ### About Us
-https://github.com/jkbaldania/technum-opus-money-lisa/blob/master/01_About_Us.pdf
+https://github.com/jkbaldania/technum-opus-money-lisa/blob/master/00_About_Us.pdf
 
 ### User Stories
-https://github.com/jkbaldania/technum-opus-money-lisa/blob/master/00_User_Stories.pdf
+https://github.com/jkbaldania/technum-opus-money-lisa/blob/master/01_User_Stories.pdf
 
 ### Baisc Prototype
 https://github.com/jkbaldania/technum-opus-money-lisa/blob/master/02_Basic_Prototype.pdf
